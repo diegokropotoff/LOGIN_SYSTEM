@@ -99,7 +99,7 @@ class ControllerPessoa:
             senha_usuario = aes.decrypt(usuario.senha)
             
             if senha == senha_usuario:
-                print('Login executado com sucesso!')
+                print(f'Login executado com sucesso!\nBem-Vindo de volta {usuario.nome}')
 
             else:
                 print('Senha inválida!')
